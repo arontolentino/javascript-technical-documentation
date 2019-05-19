@@ -11,7 +11,10 @@
 html,
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    background-color: #F0F0F7;
+    color: #707070;
+    scroll-behavior: smooth;
 }
 
 /* ---------------------------------------------- */
@@ -25,16 +28,18 @@ body {
     height: 100%;
     background-color: #43425D;
     color: #fff;
+    font-size: 15px;
 }
 
-header {
+.nav-bar header {
     height: 70px;
     line-height: 70px;
+    background-color: rgb(61, 60, 94);
 }
 
 header h1 {
     font-size: 15px;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
     vertical-align: middle;
     letter-spacing: 3px;
 }
@@ -60,3 +65,57 @@ header h1 {
 /* ---------------------------------------------- */
 /* MAIN CONTENT */
 /* ---------------------------------------------- */
+
+.main-doc {
+    margin-left: 260px;
+    height: 100%;
+}
+
+.entry-container {
+    background-color: #fff;
+    margin: 60px auto;
+    width: 85%;
+    border-radius: 7px;
+}
+
+.entry-container:first-child {
+    margin: 70px auto 30px auto;
+}
+
+.entry-container article {
+    padding: 45px;
+    line-height: 25px;
+}
+
+.entry-container h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: #4D4F5C;
+    line-height: 35px;
+}
+
+.entry-container p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+article ul {
+    margin-left: 35px;
+}
+
+article ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.code-block {
+    background-color:#EFEFEF;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.code-block:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#data-types ul {
+    margin-bottom: 20px;
+}
