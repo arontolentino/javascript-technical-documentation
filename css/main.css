@@ -1,0 +1,62 @@
+/* ---------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+
+/* ---------------------------------------------- */
+/* NAVIGATION */
+/* ---------------------------------------------- */
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    background-color: #43425D;
+    color: #fff;
+}
+
+header {
+    height: 70px;
+    line-height: 70px;
+}
+
+header h1 {
+    font-size: 15px;
+    margin-left: 20px;
+    vertical-align: middle;
+    letter-spacing: 3px;
+}
+
+.nav-links li {
+    height: 45px;
+    line-height: 45px;
+    padding-left: 35px;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.nav-links li a:link,
+.nav-links li a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links li:hover {
+    background-color: #49476C;
+}
+
+/* ---------------------------------------------- */
+/* MAIN CONTENT */
+/* ---------------------------------------------- */
