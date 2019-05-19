@@ -116,6 +116,7 @@ article ul li:not(:last-child) {
     margin-bottom: 20px;
 }
 
-#data-types ul {
+#data-types ul,
+#while-statement ul {
     margin-bottom: 20px;
 }
