@@ -58,8 +58,21 @@ header h1 {
     color: #fff;
 }
 
-.nav-links li:hover {
-    background-color: #49476C;
+.nav-links li:hover { background-color: #49476C; }
+
+/* ---------------------------------------------- */
+/* MOBILE NAVIGATION */
+/* ---------------------------------------------- */
+
+.burger-menu {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.responsive-menu {
+    display: block !important;
+    margin-bottom: 10px;
 }
 
 /* ---------------------------------------------- */
@@ -78,9 +91,7 @@ header h1 {
     border-radius: 7px;
 }
 
-.entry-container:first-child {
-    margin: 70px auto 30px auto;
-}
+.entry-container:first-child { margin: 70px auto 30px auto; }
 
 .entry-container article {
     padding: 45px;
@@ -94,29 +105,60 @@ header h1 {
     line-height: 35px;
 }
 
-.entry-container p:not(:last-child) {
-    margin-bottom: 20px;
-}
+.entry-container p:not(:last-child) { margin-bottom: 20px; }
 
-article ul {
-    margin-left: 35px;
-}
+article ul { margin-left: 35px; }
 
-article ul li:not(:last-child) {
-    margin-bottom: 20px;
-}
+article ul li:not(:last-child) { margin-bottom: 20px; }
 
 .code-block {
     background-color:#EFEFEF;
     border-radius: 7px;
     padding: 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.code-block:not(:last-child) {
-    margin-bottom: 20px;
-}
+.code-block:not(:last-child) { margin-bottom: 20px; }
 
 #data-types ul,
-#while-statement ul {
+#while-statement ul,
+#function-dec ul {
     margin-bottom: 20px;
+}
+
+/* ---------------------------------------------- */
+/* MEDIA QUERIES */
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        position: relative;
+        width: 100%;
+    }
+
+    .nav-links { display: none; }
+
+    .main-doc { margin-left: 0; }
+
+    .burger-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 70px;
+        line-height: 70px;
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+
+    .entry-container:first-child {
+        margin: 50px auto 30px auto;
+    }    
+}
+
+@media screen and (max-width: 425px) {
+    .entry-container article {
+        padding: 35px;    
+    }
 }

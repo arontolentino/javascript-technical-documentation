@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -17,7 +18,7 @@
         <header>
             <h1>JS Documentation</h1>
         </header>
-        <ul class="nav-links">
+        <ul id="nav-links" class="nav-links">
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#what-you-should-know">What you should already know</a></li>
             <li><a href="#java-javascript">Java and JavaScript</a></li>
@@ -33,6 +34,11 @@
             <li><a href="#function-dec">Function declaration</a></li>
             <li><a href="#reference">Reference</a></li>
         </ul>
+        <div>
+            <a href="javascript:void(0);" class="burger-menu" onclick="mobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>  
     </nav>
 
     <main class="main-doc">
@@ -397,6 +403,8 @@
         </section>
 
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
